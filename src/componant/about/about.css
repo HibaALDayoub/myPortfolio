@@ -1,0 +1,176 @@
+.about{
+    padding-left: 12%;
+    padding-right: 12%;
+    display: flex;
+    height: calc(100vh - 123px);
+    position: relative;
+    scroll-margin: unset;
+}
+.top{
+    margin-top: 35px;
+}
+.top h2{
+    font-size: 30px;
+    margin: 0;
+    color: #94eaea;
+    text-shadow: 2px 3px 0 var(--lightPink); 
+}
+.appskills h2{
+    margin: 10px 40%;
+    text-align: center;
+    font-size: 30px;
+    color: var(--lightPink);
+    text-shadow: 2px 3px 0 #b2d6d6;
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.top p{
+    width: 90%;
+    letter-spacing: 1.3px;
+    color: #84696ede;
+    line-height: 1.6;
+    text-align: center;
+    background-color: var(--lightPurple);
+    background: linear-gradient(45deg, var(--lightPurple), transparent);
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    padding: 9px
+}
+.top p:nth-child(2),
+.top p:last-of-type{
+    background: linear-gradient(-45deg, rgba(145, 190, 199, 0.26),transparent);
+}
+.btn-cv{
+    margin-top: 16px;
+    width: 150px;
+    height: 45px;
+    border-radius: 32px;
+    background: linear-gradient(-5deg, #ce99a2,#e3cece);
+    font-weight: bold;
+    border: none;
+    color: rgb(218, 65, 172);
+    top: -15px;
+    position: relative;
+    cursor: pointer;
+}
+.btn-cv:hover{
+    background: linear-gradient(-50deg, rgba(145, 190, 199, 0.26),#ce99a2);
+    font-weight: 800;
+}
+/* ________________________________________________ */
+.card{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2%;
+    width: 14rem;
+    height: 14rem;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--lightPurple);
+    box-shadow: rgb(216, 210, 198);
+    border-radius: 20px;
+}
+.card{
+    animation: card 4s linear infinite;
+}
+@keyframes card{
+    0%{
+        transform: translateY(-8px);
+    }
+    50%{
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(-8px);
+    }
+}
+.card h3{
+    padding: 0 36%;
+    color: #8a676d;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 2px;
+    text-align: 1.5;
+    text-shadow: 16px 11px 2px #e6b5d591
+}
+.skills .card:nth-child(3) h3{
+    padding: 0 17%;
+}
+.card img{
+    transform: translate(44px, -25px);
+    position: relative;
+    max-width: 100%;
+    object-fit: unset;
+    border-radius: 50%;
+    width: 60%;
+    height: 40%;
+}
+.card p{
+    padding: 0px 5px 20px;
+    text-align: center;
+    color: #597878;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    
+}
+
+@media (max-width: 992px) {
+    .about{
+        height: 1800px;
+        display: block;
+    }
+    .top h2{
+        font-size: 27px;
+    }
+    .top p{
+        font-size: 15px;
+    }
+        .card h3{
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0
+        }
+        .card p{
+            padding: 0px 5px 10px;
+            font-size: 14px;
+        }
+        .card img{
+            transform: translate(40px, -7px);
+            height: 41%;
+        }
+        .skills .card:nth-child(3) p,
+        .skills .card:last-child p{
+            font-size: 18px;
+        }
+        .skills .card:nth-child(4) h3{
+        padding: 0 25%;
+        }
+        
+}
+@media (max-width: 768px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+    }}
+    @media (max-width: 768px) {
+        .about{
+            padding-top: 44px;
+        }
+    }
+    @media (max-width: 376px) {
+    .about {
+        height: 125rem;
+        padding-top: 0;
+    }
+}
+@media (max-width: 423px) {
+    .about{
+
+        height: 128rem;
+    }
+}
